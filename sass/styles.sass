@@ -179,3 +179,20 @@ body
             right: 0
             transform: scale(.8, .8)
             z-index: 2
+.slider_buttons
+    list-style: none
+    padding: 0
+    margin: 2rem 0
+    li
+        width: 9px
+        height: 9px
+        margin: 0 .5rem
+        position: relative
+        border-radius: 100%
+        display: inline-block
+        background-color: #5b596e
+        transition: background .2s ease-in-out
+        &:hover
+            background: $highlight
+        &.current
+            background-color: $highlight
