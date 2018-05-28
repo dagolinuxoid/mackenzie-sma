@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'brandon-grotesque', Helvetica, sans-serif; }
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.btn {
+  border: 0;
+  outline: none;
+  border-radius: 2rem;
+  padding: .6rem 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-align: center; }
+
+.cf::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.btn--highlight {
+  background-color: #7ac488; }
+
+.btn--secondary {
+  background-color: rgba(250, 250, 250, 0.35); }
+
+.btn--sm {
+  padding: .3rem 1.5rem; }
+
+.banner {
+  background: url("https://source.unsplash.com/random") no-repeat center #222;
+  background-size: cover; }
+  .banner__header {
+    padding: 2rem 0; }
+  .banner__logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.35rem;
+    float: left;
+    margin: 0; }
+    .banner__logo span {
+      font-weight: 400; }
+  .banner__nav {
+    float: right; }
+    .banner__nav a {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 2rem; }
+  .banner__content {
+    padding: 4rem 0 8rem; }
+
+.title,
+.sub_title {
+  color: #fff;
+  text-align: center; }
+
+.title {
+  font-size: 3.5rem;
+  margin: 0; }
+
+.sub_title {
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.75;
+  width: 500px;
+  margin: 0 auto 2rem; }
+
+.btn_wrapper {
+  text-align: center;
+  margin: 3rem 0; }
+  .btn_wrapper .btn {
+    margin: 0 .75rem; }
+
+.services {
+  background: #f2f1f8;
+  padding: 2rem 0 6.5rem;
+  position: relative; }
+  .services::before {
+    content: '';
+    position: absolute;
+    border-top: 2px silver solid;
+    width: 59.6%;
+    margin-left: 19.8%;
+    bottom: 52px; }
+
+.service {
+  background: #fff;
+  width: 31%;
+  float: left;
+  margin: -5rem 1% 0;
+  padding: 3rem 2.5%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
+  border-radius: .35rem; }
+  .service h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #3f3d4e; }
+  .service p {
+    margin: 0 0 2rem;
+    color: #3f3d4e; }
+  .service .btn {
+    padding: .5rem 2rem; }
+  .service::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    height: 50px;
+    border-left: 2px silver solid; }
