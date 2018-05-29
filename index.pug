@@ -42,7 +42,10 @@ html(lang="en")
         section.past_work
             .wrapper
                 h2.title Our Work
-                img(src="images/logos.png", alt="Past client").logos
+                .logos
+                    img(src="images/user-adobe.png", alt="Adobe").logos__item
+                    img(src="images/user-google.png", alt="Google").logos__item
+                    img(src="images/user-paravel.png", alt="Paravel").logos__item
                 ul.slider_buttons
                     a(href="#")
                         li.current
@@ -54,6 +57,14 @@ html(lang="en")
                     li
                         img(src="https://source.unsplash.com/random", alt="Wordpress")
                     li
-                        img(src="https://source.unsplash.com/random", alt="Amazon")
+                        img(src="https://source.unsplash.com/user/erondu", alt="Amazon")
                     li
-                        img(src="https://source.unsplash.com/random", alt="Netflix")
+                        img(src="https://source.unsplash.com/weekly?water", alt="Netflix")
+        section.contact
+            .wrapper
+                h2.title Get in touch
+                p.sub_title Truffaut DIY keffiyeh, twee messenger bag venmo locavore organic master cleanse marfa jochujang selvage.
+                a(href="#").btn.btn--highlight.btn--lg Contact Us
+        footer
+            p.copyright © 2016 
+                a Mackenzie Child

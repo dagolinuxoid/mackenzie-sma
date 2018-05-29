@@ -43,6 +43,10 @@ body
 .btn--sm
     padding: .3rem 1.5rem
 
+.btn--lg
+    padding: 1rem 5rem
+    font-size: 1.35rem
+
 // Banner sytles
 
 .banner
@@ -116,7 +120,7 @@ body
     box-shadow: 0 0 57px 0 rgba(4,6,9, .25)
     border-radius: .35rem
     h3
-        margin: 0
+        margin: 0 0 1rem
         font-size: 1.5rem
         color: $dark_grey
     p 
@@ -146,11 +150,16 @@ body
     .title
         color: $white
         font-size: 2.5rem
-        margin: 0 0 .75
+        margin: 0 0 2rem
     .logos
         width: 750px
         max-width: 95%
-        
+        display: flex   
+        justify-content: space-evenly
+        height: 40px
+        margin: 0 auto
+        &__item
+            max-width: 120px
 .slider
     list-style: none
     li
@@ -164,6 +173,7 @@ body
         border-radius: .35rem .35rem 0 0
         img
             width: 100%
+            height: 100%
         &:nth-child(1)
             bottom: -37px
             left: 0
@@ -183,6 +193,8 @@ body
     list-style: none
     padding: 0
     margin: 2rem 0
+    a
+        text-decoration: none
     li
         width: 9px
         height: 9px
@@ -196,3 +208,30 @@ body
             background: $highlight
         &.current
             background-color: $highlight
+
+// Contact styles
+
+.contact
+    padding: 6rem 0 8rem
+    text-align: center
+    background: $grey_background
+    .title
+        font-size: 2.5rem
+        color: $dark_grey
+        margin: 0 0 1rem
+    .sub_title
+        font-size: 1.5rem
+        color: $grey_copy
+        width: 600px
+        max-width: 100%
+        margin: 0 auto 4rem
+
+footer
+    padding: 1rem 0
+    p.copyright
+        text-align: center
+        font-weight: 700
+        color: $grey_copy
+    a
+        color: $highlight
+        text-decoration: none

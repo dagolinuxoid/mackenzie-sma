@@ -33,6 +33,10 @@ body {
 .btn--sm {
   padding: .3rem 1.5rem; }
 
+.btn--lg {
+  padding: 1rem 5rem;
+  font-size: 1.35rem; }
+
 .banner {
   background: url("https://source.unsplash.com/random") no-repeat center #222;
   background-size: cover; }
@@ -101,7 +105,7 @@ body {
   box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
   border-radius: .35rem; }
   .service h3 {
-    margin: 0;
+    margin: 0 0 1rem;
     font-size: 1.5rem;
     color: #3f3d4e; }
   .service p {
@@ -119,3 +123,98 @@ body {
   .service:nth-child(2)::after {
     height: 105px;
     bottom: -105px; }
+
+.past_work {
+  background: #3f3d4e;
+  padding: 5rem 0 25rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+  .past_work .title {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0 0 2rem; }
+  .past_work .logos {
+    width: 750px;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    margin: 0 auto; }
+    .past_work .logos__item {
+      max-width: 120px; }
+
+.slider {
+  list-style: none; }
+  .slider li {
+    width: 600px;
+    height: 375px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
+    position: absolute;
+    z-index: 3;
+    border-radius: .35rem .35rem 0 0; }
+    .slider li img {
+      width: 100%;
+      height: 100%; }
+    .slider li:nth-child(1) {
+      bottom: -37px;
+      left: 0;
+      transform: scale(0.8, 0.8);
+      z-index: 2; }
+    .slider li:nth-child(2) {
+      left: 50%;
+      margin-left: -300px;
+      z-index: 4;
+      bottom: 0; }
+    .slider li:nth-child(3) {
+      bottom: -37px;
+      right: 0;
+      transform: scale(0.8, 0.8);
+      z-index: 2; }
+
+.slider_buttons {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0; }
+  .slider_buttons a {
+    text-decoration: none; }
+  .slider_buttons li {
+    width: 9px;
+    height: 9px;
+    margin: 0 .5rem;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #5b596e;
+    transition: background .2s ease-in-out; }
+    .slider_buttons li:hover {
+      background: #7ac488; }
+    .slider_buttons li.current {
+      background-color: #7ac488; }
+
+.contact {
+  padding: 6rem 0 8rem;
+  text-align: center;
+  background: #f2f1f8; }
+  .contact .title {
+    font-size: 2.5rem;
+    color: #3f3d4e;
+    margin: 0 0 1rem; }
+  .contact .sub_title {
+    font-size: 1.5rem;
+    color: #b9b7c6;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto 4rem; }
+
+footer {
+  padding: 1rem 0; }
+  footer p.copyright {
+    text-align: center;
+    font-weight: 700;
+    color: #b9b7c6; }
+  footer a {
+    color: #7ac488;
+    text-decoration: none; }
